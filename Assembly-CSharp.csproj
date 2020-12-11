@@ -36,12 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameManager.cs" />
-     <Compile Include="Assets\Hello.cs" />
-     <Compile Include="Assets\HelloArray.cs" />
-     <Compile Include="Assets\ItemBox.cs" />
-     <Compile Include="Assets\Player.cs" />
-     <Compile Include="Assets\Rotation.cs" />
+     <Compile Include="Assets\Project2\Script\Calc.cs" />
+     <Compile Include="Assets\Project2\Script\Move.cs" />
+     <Compile Include="Assets\Project2\Script\SetPosition.cs" />
+     <Compile Include="Assets\Project2\Script\Spawner.cs" />
+     <Compile Include="Assets\SetPosition.cs" />
+     <Compile Include="Assets\Sokovan\GameManager.cs" />
+     <Compile Include="Assets\Sokovan\Hello.cs" />
+     <Compile Include="Assets\Sokovan\HelloArray.cs" />
+     <Compile Include="Assets\Sokovan\ItemBox.cs" />
+     <Compile Include="Assets\Sokovan\Player.cs" />
+     <Compile Include="Assets\Sokovan\Rotation.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/UnityE/2019.4.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
