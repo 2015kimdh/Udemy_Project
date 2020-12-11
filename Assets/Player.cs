@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour{
 
-    
+    public GameManager gameManager;
     public float speed = 10f;
     Rigidbody playerRigidbody;
     public Transform playerPosion;
@@ -17,6 +17,9 @@ public class Player : MonoBehaviour{
     // Update is called once per frame
     void Update()
     {
+        if(gameManager.isGameEnd)
+            return;
+            
        float inputX = Input.GetAxis("Horizontal");
        float inputZ = Input.GetAxis("Vertical");
 
