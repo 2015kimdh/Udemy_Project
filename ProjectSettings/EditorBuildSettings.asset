@@ -4,8 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Sokovan/SokovanMain.unity
-    guid: 46e75ef699274ce45a630c60e95f424e
-  m_configObjects: {}
+  m_Scenes: []

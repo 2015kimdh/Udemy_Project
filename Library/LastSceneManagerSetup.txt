@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Project2/Main.unity
+- path: Assets/FPS_TEST.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
