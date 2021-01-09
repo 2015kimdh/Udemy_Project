@@ -39,6 +39,7 @@
      <Compile Include="Assets\BawlingGameManager.cs" />
      <Compile Include="Assets\CamFollow.cs" />
      <Compile Include="Assets\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
+     <Compile Include="Assets\GameMaker.cs" />
      <Compile Include="Assets\Project2\Script\Calc.cs" />
      <Compile Include="Assets\Project2\Script\Move.cs" />
      <Compile Include="Assets\Project2\Script\SetPosition.cs" />
@@ -50,7 +51,11 @@
      <Compile Include="Assets\Scenes\Bawling\Script\ShooterRotater.cs" />
      <Compile Include="Assets\Scenes\Bawling\Script\SpawnGenerator.cs" />
      <Compile Include="Assets\Scenes\Bawling\Script\prop.cs" />
+     <Compile Include="Assets\Scenes\TowerDefence\AttackEnemy.cs" />
+     <Compile Include="Assets\Scenes\TowerDefence\Faction.cs" />
+     <Compile Include="Assets\Scenes\TowerDefence\GamePlayer.cs" />
      <Compile Include="Assets\Scenes\TowerDefence\Tower.cs" />
+     <Compile Include="Assets\Scenes\TowerDefence\TowerHp.cs" />
      <Compile Include="Assets\Shared\Ramps\Runtime\RampAsset.cs" />
      <Compile Include="Assets\Shared\Scripts\AdjustTimeScale.cs" />
      <Compile Include="Assets\Shared\Scripts\DecalDestroyer.cs" />

@@ -64,6 +64,11 @@ public class Tower : MonoBehaviour
     public int[] myPosition;
     private Vector3 direction;
 
+    public int inGameID;
+
+    public int GetTargetID(){
+        return targetID;
+    }
     // Start is called before the first frame update
     void Start()
     {
