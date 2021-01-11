@@ -10,6 +10,5 @@ public class Faction : MonoBehaviour
     }
 
     public factionType whichTeam;
-    // Start is called before the first frame update
     
 }

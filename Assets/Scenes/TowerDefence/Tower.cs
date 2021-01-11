@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
+    public GameMaker gameMasterInstance;
     [System.Serializable]
     public class Damage
     {
@@ -29,30 +30,11 @@ public class Tower : MonoBehaviour
         private float rate;  //버프 디버프의 정도. %일 것임
         private int trgetID;
     }
-
-    public enum factionType{
-        friendly,
-        enemy
-    }
-    public enum towerStatus{
-        alive,
-        death,
-        stun
-    }
-    public enum attackType{
-        AD,
-        AP,
-        Heal
-    }
-    public factionType whichTeam;   //아군이냐 적군이냐
-    public towerStatus status;  //죽었나 살았나 기절인가
     private int targetID;   //공격할 대상. 인게임에서 배치 순서대로 ID를 정해줄 것인데 그 ID를 가지고 공격할 대상 판단
-    public float hp;    //체력
     public int armorPoint;  //물리방어력
     public int magicArmorPoint; //마법저항력
     public int attackPoint; //공격력
     public float attackSpeed;   //공격 속도
-    public attackType damageType;   //마딜 물딜
     public int resistance;  //저지 수
     public float moveSpeed; //움직이는 속도. 아군의 경우 0. 움직이지 않음
     public float reEngageTime;  //리젠 시간
@@ -72,6 +54,12 @@ public class Tower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameMasterInstance = GameObject.FindGameObjectWithTag
+            ("GameMaker").GetComponent<GameMaker>();
+
+        gameMasterInstance.AddMyID(this);   // 타워를 배치하여 처음 실행 될때 함
+        
+
         Damage test = new Damage();
         test.ad = 10;
         test.ap = 20;

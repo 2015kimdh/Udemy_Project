@@ -36,7 +36,8 @@ public class AttackEnemy : MonoBehaviour
             instance = GetComponent<Tower>();
         }
         if(ingameManagerInstance == null){
-            ingameManagerInstance = FindObjectOfType<GameMaker>();
+            ingameManagerInstance = GameObject.FindGameObjectWithTag
+            ("GameMaker").GetComponent<GameMaker>();
         }
     }
 }

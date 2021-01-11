@@ -74,6 +74,7 @@
      <Compile Include="Assets\Sokovan\ItemBox.cs" />
      <Compile Include="Assets\Sokovan\Player.cs" />
      <Compile Include="Assets\Sokovan\Rotation.cs" />
+     <Compile Include="Assets\TowerDeployMent.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
