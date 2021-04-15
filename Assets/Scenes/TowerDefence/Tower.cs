@@ -28,7 +28,7 @@ public class Tower : MonoBehaviour
         private buffName whatfBuff;
         private float continueTime;  //
         private float rate;  //버프 디버프의 정도. %일 것임
-        private int trgetID;
+        private int targetID;
     }
     private int targetID;   //공격할 대상. 인게임에서 배치 순서대로 ID를 정해줄 것인데 그 ID를 가지고 공격할 대상 판단
     public int armorPoint;  //물리방어력
@@ -43,13 +43,17 @@ public class Tower : MonoBehaviour
     private List<buff> iGiveBuff;   //내가 가하고 있는 버프나 디버프
     private List<buff> iRecieveBuff;    //내가 당하고 있는 버프나 디버프
     private bool amIResist; // 내가 저지 당하고 있나?
-    public int[] myPosition;
-    private Vector3 direction;
+    public int[] myPosition;    // 게임 내에서의 위치
+    private Vector3 direction;  // 바라보고 있는 방향
 
-    public int inGameID;
+    public int inGameID;    // 게임 내에서 ID
 
     public int GetTargetID(){
         return targetID;
+    }
+
+    public void SetTargetID(int target){
+        targetID = target;
     }
     // Start is called before the first frame update
     void Start()
